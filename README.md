@@ -1,5 +1,5 @@
 # TextieAI - Grammar Correction App
-TextieAI is an AI-powered, lightweight Flask web app that improves your writing. 
+#### TextieAI is an AI-powered, lightweight Flask web app that improves your writing. 
 
 ![Image](https://github.com/user-attachments/assets/1f28d7cd-4fec-40c9-aa0b-d429f3330a4b)
 

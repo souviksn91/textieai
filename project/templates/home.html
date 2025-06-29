@@ -1,0 +1,55 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+
+<!-- block content start  -->
+{% block content %}
+
+<!-- header  -->
+<div class="mt-2">
+    <h2 class="heading-txt">Perfect Your Writing in Seconds</h2>
+    <p class="dark-txt mt-2">TextieAI spots grammar and spelling mistakes. Just paste your text, and get instant AI-powered improvements.</p>
+</div>
+
+<!-- form  -->
+<div class="mt-3" style="max-width: 800px;">
+
+    <form method="POST">
+        {{ form.hidden_tag() }}
+
+        <div class="mb-2">
+            {{ form.text.label(class="form-label mb-1 dark-txt") }} {{ form.text( class="form-control form-txt", style="height: 200px;", id="text-input", placeholder="Type or paste your text here (max 30 words)..." ) }}
+            <div id="word-counter" class="sm-txt mt-1">0/30 words</div>
+            {% if form.text.errors %}
+            <div class="cal-bold mt-2" style="font-size: 16px; color: #222824;">
+                {% for error in form.text.errors %}
+                <p class="mb-0">{{ error }}</p> {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+
+        <button type="submit" class="btn bttn-txt mt-1">Correct Text</button>
+    </form>
+
+</div>
+
+
+
+
+<!-- correction  -->
+{% if correction %}
+<div class="mt-4 top-border pt-3" style="max-width: 800px;">
+    <p class="cal-reg mb-1" style="font-size: 20px;color: #222824;">Corrected Text</p>
+    <p class="corrected-txt mb-2">{{ correction.corrected_text }}</p>
+
+    <p class="cal-reg mb-1" style="font-size: 20px;color: #222824;">Original Text</p>
+    <p class="original-txt mb-2">{{ correction.original_text }}</p>
+
+    {% if no_changes %}
+    <p class="cal-reg mb-1" style="font-size: 16px;color: #222824;">No changes needed! Your text is already correct or couldn't be improved further.</p>
+    {% endif %}
+</div>
+{% endif %}
+
+
+<!-- end of block conent  -->
+{% endblock %}

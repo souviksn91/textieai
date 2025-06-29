@@ -1,0 +1,241 @@
+/* colors used  */
+
+
+/* dark text #222824  */
+
+
+/* green #28AD6C  */
+
+
+/* green hover #18804E  */
+
+
+/* gray #6C726E */
+
+
+/* lightgray #BDC8C0  */
+
+
+/* bitter fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* regular and bold fonts  */
+
+.cal-reg {
+    font-family: "Caladea", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cal-bold {
+    font-family: "Caladea", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cal-reg-ita {
+    font-family: "Caladea", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.cal-bold-ita {
+    font-family: "Caladea", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+body {
+    font-family: "Caladea", serif;
+}
+
+
+/* menu text  */
+
+.menu-txt {
+    font-family: "Caladea", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #222824;
+    text-decoration: none;
+}
+
+
+/* heading text  */
+
+.heading-txt {
+    font-family: "Caladea", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #222824;
+}
+
+
+/* dark text */
+
+.dark-txt {
+    font-family: "Caladea", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #222824;
+}
+
+.corrected-txt {
+    font-family: "Caladea", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #222824;
+}
+
+.original-txt {
+    font-family: "Caladea", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #6C726E;
+}
+
+
+/* form placeholder text  */
+
+.form-txt {
+    font-family: "Caladea", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6C726E;
+    font-size: 20px;
+    /* height: 44px; */
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 1px solid #BDC8C0;
+    border-radius: 6px;
+}
+
+
+/* button text  */
+
+.bttn-txt {
+    font-family: "Caladea", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #28AD6C;
+    border: none;
+    border-radius: 6px;
+    height: 44px;
+    padding: 0 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.4s ease;
+}
+
+.bttn-txt:hover {
+    background-color: #18804E;
+    color: #ffffff;
+}
+
+.bttn-txt:active {
+    background-color: #18804E !important;
+    color: #ffffff !important;
+}
+
+
+/* small text  */
+
+.sm-txt {
+    font-family: "Caladea", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6C726E !important;
+    font-size: 16px;
+}
+
+.container-lg {
+    max-width: 1280px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+footer {
+    margin-top: auto;
+    /* pushes footer down */
+}
+
+
+/* bottom and top border  */
+
+.bottom-border {
+    border-bottom: 1px solid #BDC8C0 !important;
+}
+
+.top-border {
+    border-top: 1px solid #BDC8C0 !important;
+}
+
+
+/* navbar bottom border */
+
+.nav-bottom-border {
+    border-bottom: 1px solid #222824 !important;
+    margin-bottom: 20px !important;
+}
+
+
+/* top and bottom navbar padding */
+
+.nav-top-bottom-padding {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+}
+
+.custom-footer {
+    border-top: 1px solid #222824;
+    margin-top: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
+/* pagination  */
+
+.custom-pagination .page-link {
+    color: #0A2038;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    /* background-color: #228CE0; */
+}
+
+.custom-pagination .page-link:hover {
+    background-color: #DAE1E8;
+}
+
+.custom-pagination .page-item.active .page-link {
+    color: #fff;
+    background-color: #228CE0;
+}
+
+.custom-pagination .page-item.disabled .page-link {
+    color: #869DB6;
+    pointer-events: none;
+}

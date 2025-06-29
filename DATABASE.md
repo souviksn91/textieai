@@ -23,7 +23,7 @@
     ```
 
 ## API Key Setup
-1. Get a free API key from OpenRouter.ai
+1. Get a free API key from **OpenRouter.ai**
 
 2. Add it to your .env file
     ```ini
